@@ -1,0 +1,23 @@
+---
+apiVersion: tekton.dev/v1alpha1
+kind: ClusterTask
+metadata:
+  name: clustertask-2
+spec:
+  params:
+    - name: myargs
+      type: string
+  resources:
+    inputs:
+      - name: my-repo
+        type: git
+    outputs:
+      - name: code-image
+        type: image
+  steps:
+    - name: hello
+      image: busybox
+      script: echo hello
+    - name: exit
+      image: busybox
+      script: echo exit

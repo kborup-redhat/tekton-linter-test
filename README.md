@@ -6,3 +6,4 @@ Linters to be tested are :-
 
 1. yamllint
 1. markdownlint
+1. check-make

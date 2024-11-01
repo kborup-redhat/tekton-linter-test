@@ -12,3 +12,5 @@ StringLiterals:
   Enabled: false
 Style/FrozenStringLiteralComment:
   Enabled: false
+test9:
+  Enabled: true
